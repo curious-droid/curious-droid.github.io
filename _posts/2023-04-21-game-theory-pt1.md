@@ -22,7 +22,9 @@ The three possible moves in 007 are:
 2. 🔫: Gun. Merely a water gun, no need to panic :) Consumes one ammo, defeats the opponent if played when they are reloading.
 3. 🚰: Reload. Loads one additional ammo.
 
-"Ammo" is a counter that starts at zero. Obviously, 🔫 cannot be played with zero ammo (let's say this results in an automatic loss, to heavily discourage this). Ammo carries over from one round to the next. For example, using 🚰 twice, in two different rounds, allows you to use 🔫 a maximum of two times, in two different rounds, before you must reload to use 🔫 again. 
+"Ammo" is a counter that starts at zero. Obviously, 🔫 cannot be played with zero ammo (let's say this results in an automatic loss, to heavily discourage this). Ammo carries over from one round to the next. 
+
+For example, using 🚰 twice, in two different rounds, allows you to use 🔫 a maximum of two times, in two different rounds, before you must reload to use 🔫 again. 
 
 ## Example game
 
@@ -39,7 +41,7 @@ And thus, player 2 wins.
 
 ## Extra
 
-This game is a great time-killer for when I'm bored and with my brother (especially when waiting in line for something). There are accompanying hand motions and chants (which do draw some eyebrows from others) but it's overall a more interesting version of Rock Paper Scissors. I thought of the contents of this post while I was playing a game of 007 with my brother, and decided it was a decent way to introduce some Game Theory concepts.
+This game is a great time-killer for when I'm bored with my brother (especially when waiting in line for something). There are accompanying hand motions and chants (which do draw some eyebrows from others) but it's overall a just more interesting version of Rock Paper Scissors. I thought of the contents of this post while I was playing a game of 007 with my brother, and decided it was a decent way to f̶i̶n̶a̶l̶l̶y̶ ̶w̶r̶i̶t̶e̶ ̶s̶o̶m̶e̶t̶h̶i̶n̶g̶ ̶o̶n̶ ̶m̶y̶ ̶b̶l̶o̶g̶ introduce some game theory concepts.
 
 ## Issues
 
@@ -116,7 +118,7 @@ Now we can draw another grid, just like before.
 
 Where is the Nash Equilibrium?
 
-Well, it was kind of a trick question, there is no Nash Equilibrium in Rock Paper Scissors! Notice that at it is impossible for both players to be winning, hence at least one of the players would be able to improve their result by changing their move to one that would win instead—there is positive deviation. Therefore, no outcome can be the Nash Equilibrium. 
+Well, it was kind of a trick question, there is no Nash Equilibrium in Rock Paper Scissors! Notice that it is impossible for both players to be winning, hence at least one of the players would be able to improve their result by changing their move to one that would win instead—there is positive deviation. Therefore, no outcome can be the Nash Equilibrium. 
 
 This makes a lot of sense, since Rock Paper Scissors is meant to be a random game—there is no single "optimal" move to play. If there was a Nash equilibrium, all players would play that strategy every time to maximize their score, and the game would be quite boring.
 
@@ -132,9 +134,7 @@ Here's the outcome table for the first move of 007:
 |**🔫/🎈**| instant loss \ +1 ammo |instant loss \ instant loss|instant loss \ nothing|
 |**🛡**| nothing \ +1 ammo| nothing \ instant loss | nothing \ nothing|
 
-Now looking at this table, we can see our suspicious confirmed. The 🚰 \🚰 strategy is a Nash Equilibrium, meaning that deviating from this strategy would only ever result in a worse outcome—no positive deviation. 
-
-Hence, it's always optimal to 🚰 in the first move. With that, we successfully used game theory to explain why the most optimal first move in 007 is 🚰!
+Now looking at this table, we can see our suspicious confirmed. The 🚰 \🚰 strategy is a Nash Equilibrium, meaning that deviating from this strategy would only ever result in a worse outcome—no positive deviation. With that, we successfully used game theory to explain why the most optimal first move in 007 is 🚰!
 
 ## Concluding Thoughts
 
