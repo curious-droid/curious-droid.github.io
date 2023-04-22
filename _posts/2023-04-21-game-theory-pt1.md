@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Analyzing 007 - Part 1 [DRAFT]
-categories: [Game Theory, 007]
+categories: [Game Theory]
 ---
 
 Woohoo, first actual post! I'm just going to write up some of my thoughts on a game that my brother and I like to play: 007.
@@ -120,3 +120,4 @@ Here's the outcome table:
 
 Now looking at this table, we can see our suspicious confirmed. The 🚰 \🚰 strategy is a Nash Equilibrium, meaning that deviating from this strategy would only ever result in a worse outcome. 
 
+\[POST UNDER CONSTRUCTION\]
