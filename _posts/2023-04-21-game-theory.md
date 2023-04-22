@@ -41,7 +41,7 @@ And thus, player 2 wins.
 
 ## Extra
 
-This game is a great time-killer for when I'm bored with my brother (especially when waiting in line for something). There are accompanying hand motions and chants (which do draw some eyebrows from others) but it's overall a just more interesting version of Rock Paper Scissors. I thought of the contents of this post while I was playing a game of 007 with my brother, and decided it was a decent way to f̶i̶n̶a̶l̶l̶y̶ ̶w̶r̶i̶t̶e̶ ̶s̶o̶m̶e̶t̶h̶i̶n̶g̶ ̶o̶n̶ ̶m̶y̶ ̶b̶l̶o̶g̶ introduce some game theory concepts.
+This game is a great time-killer for when I'm bored with my brother (especially when waiting in line for something). There are accompanying hand motions and chants (which do draw some eyebrows from others) but it's overall a just more interesting version of Rock Paper Scissors. I thought of the contents of this post while I was playing a game of 007 with my brother, and decided it was a decent way to ~~finally write something on my blog~~ introduce some game theory concepts.
 
 ## Issues
 
@@ -153,4 +153,4 @@ Finally, this shows that Double-0 Seven doesn't have a perfect strategy past the
 And with that, it seems this post is now coming to a close. Having successfully run out of things to blabber about, I hope that you found this quick exploration of game theory fun, or somewhat intriguing at least. 
 
 ---
-P.S. i added a comment feature. plz use it to honor my brain cells that sacrificed themselves in the process of c̶o̶p̶y̶-̶p̶a̶s̶t̶i̶n̶g̶ ̶o̶t̶h̶e̶r̶ ̶p̶e̶o̶p̶l̶e̶'̶s̶ ̶c̶o̶d̶e̶ coding this feature XD
+P.S. i added a comment feature. plz use it to honor my brain cells that sacrificed themselves in the process of ~~copy-pasting other people's code~~ coding this feature XD
