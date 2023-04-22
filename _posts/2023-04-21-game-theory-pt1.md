@@ -10,7 +10,7 @@ Woohoo, first actual post! I'm just going to write up some of my thoughts on a g
 
 ## What is 007? 
 
-007 a game, named after the famous spy, that is essentially an upgraded, slightly more violent version of Rock Paper Scissors.
+007 is a game, named after the famous spy, that is essentially an upgraded, slightly more violent version of Rock Paper Scissors.
 
 ## The rules
 
@@ -61,7 +61,11 @@ Let's solidify this idea with \*gasp\* *mathematics*. But first, we must talk a 
 
 *Key term:* **Nash Equilibrium**
 
-A Nash Equilibrium is essentially a "relative best strategy". Well, not quite, but this simple explanation will suffice. In a Nash Equilibrium strategy, no **one** player can improve their position by switching to a different move. If it is possible for multiple players collude together and change their moves for a better result, it doesn't prevent a strategy from being a Nash Equilibrium. We might talk about this more in the future, but we'll leave the explanation here for now. 
+A Nash Equilibrium is essentially a "relative best strategy". Well, not quite, but this simple explanation will suffice. In a Nash Equilibrium strategy, no **one** player can improve their position by switching to a different move. 
+
+If it is possible for multiple players collude together and change their moves for a better result, it doesn't prevent a strategy from being a Nash Equilibrium. 
+
+We might talk about this more in the future, but we'll leave the explanation here for now. 
 
 ## Applying Nash Equilibrium
 
@@ -82,7 +86,11 @@ We can draw a neat little table for the resulting sentence for each prisoner's c
 
 As you can see, each box in the grid represents one possible strategy for the two players. Can you find the Nash Equilibrium?[^1]
 
-Well, I claim that the Nash Equilibrium is when both prisoners betray. What? But if they both stay silent, it would be better for the both of them! The reason the Nash Equilibrium is at double betrayal is because, in this strategy, any one player choosing to stay silent instead will double their time in jail. Meanwhile, both players staying silent, while it is a utilitarian best option, is not an equilibrium, because any one player changing their choice to betrayal can get away without any sentence at all. 
+Well, I claim that the Nash Equilibrium is when both prisoners betray. What? But if they both stay silent, it would be better for the both of them! 
+
+The reason the Nash Equilibrium is at double betrayal is because, in this strategy, any one player choosing to stay silent instead will double their time in jail. 
+
+Meanwhile, both players staying silent is not an equilibrium, because any one player changing their choice to betrayal can get away without any sentence at all. 
 
 Finally, one important fact is that there is not necessarily exactly one Nash Equilibrium: there could be multiple, or there could be none. 
 
@@ -92,7 +100,11 @@ With this new knowledge in mind, let's return to our games.
 
 # Rock Paper Scissors
 
-First, we can try finding a Nash Equilibrium for Rock Paper Scissors. To do so, we have to assign some sort of value to each possible outcome of the game, just like the prisoners' sentences in the previous example. Let's say a win counts as +1, a loss counts as -1, and a draw results in 0. The values are arbitrary, as long as a win is better than a draw, which is further better than a loss. Now we can draw another grid, just like before. 
+First, we can try finding a Nash Equilibrium for Rock Paper Scissors. To do so, we have to assign some sort of value to each possible outcome of the game, just like the prisoners' sentences in the previous example. 
+
+Let's say a win counts as +1, a loss counts as -1, and a draw results in 0. The values are arbitrary, as long as a win is better than a draw, which is further better than a loss. 
+
+Now we can draw another grid, just like before. 
 
 | P1 choice \ P2 choice | Rock | Paper | Scissors |
 |-|:-:|:-:|:-:|
@@ -102,7 +114,7 @@ First, we can try finding a Nash Equilibrium for Rock Paper Scissors. To do so, 
 
 Where is the Nash Equilibrium?
 
-Weell, it was a trick question, there is no Nash Equilibrium in Rock Paper Scissors. We can show this more rigorously by considering any outcome of the game and noticing that at it is impossible for both players to be winning in that outcome, hence at least one of the players is not winning, and would be able to improve their result by changing their move to one that would win instead. Therefore, no outcome can be the Nash Equilibrium. 
+Weell, it was a trick question, there is no Nash Equilibrium in Rock Paper Scissors! We can show this more rigorously by noticing that at it is impossible for both players to be winning, hence at least one of the players would be able to improve their result by changing their move to one that would win instead. Therefore, no outcome can be the Nash Equilibrium. 
 
 This makes a lot of sense, since Rock Paper Scissors is meant to be a random game—there is no single "optimal" move to play. If there was a Nash equilibrium, all players would play that strategy every time, and the game would be quite boring.
 
@@ -110,7 +122,7 @@ But wait! We previously noticed that there does exist a optimal strategy for the
 
 # Back to 007
 
-Here's the outcome table:
+Here's the outcome table for the first move of 007:
 
 | P1 choice \ P2 choice | 🚰 | 🔫/🎈 | 🛡 |
 |-|:-:|:-:|:-:|
