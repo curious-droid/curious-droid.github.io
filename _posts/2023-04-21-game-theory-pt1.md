@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Analyzing 007 - Part 1 [DRAFT]
+title: Analyzing 007 - Part 1
 categories: [Game Theory]
 ---
 
-Woohoo, first actual post! I'm just going to write up some of my thoughts on a game that my brother and I like to play: 007.
+Woohoo, first actual post! I'm just going to write up some of my thoughts on a game that my little brother and I often play: 007.
 
 # Double-0 Seven
 
@@ -19,10 +19,10 @@ Like in Rock Paper Scissors, 007 involves two players simultaneously choosing on
 The three possible moves in 007 are:
 
 1. 🛡: Shield. Blocks the gun.
-2. 🔫: Gun. Consumes one ammo, defeats the opponent if played when they are reloading.
-3. 🚰: Reload. Restores one ammo.
+2. 🔫: Gun. Merely a water gun, no need to panic :) Consumes one ammo, defeats the opponent if played when they are reloading.
+3. 🚰: Reload. Loads one additional ammo.
 
-"Ammo" is a counter that starts at zero. Obviously, 🔫 cannot be played with zero ammo (this results in an automatic loss). Ammo carries over from one round to the next. For example, using 🚰 twice, in two different rounds, allows you to use 🔫 a maximum of two times, in two different rounds, before you must reload to use 🔫 again. 
+"Ammo" is a counter that starts at zero. Obviously, 🔫 cannot be played with zero ammo (let's say this results in an automatic loss, to heavily discourage this). Ammo carries over from one round to the next. For example, using 🚰 twice, in two different rounds, allows you to use 🔫 a maximum of two times, in two different rounds, before you must reload to use 🔫 again. 
 
 ## Example game
 
@@ -39,7 +39,7 @@ And thus, player 2 wins.
 
 ## Extra
 
-I think this game is quite fun to play when I'm bored and with a friend, especially when waiting in line for something. There are accompanying hand motions and chants (which do draw some eyebrows from others) but overall a more interesting, and maybe more strategic (we'll find out if that's really true) game than Rock Paper Scissors. 
+This game is a great time-killer for when I'm bored and with my brother (especially when waiting in line for something). There are accompanying hand motions and chants (which do draw some eyebrows from others) but it's overall a more interesting version of Rock Paper Scissors. I thought of the contents of this post while I was playing a game of 007 with my brother, and decided it was a decent way to introduce some Game Theory concepts.
 
 ## Issues
 
@@ -53,19 +53,21 @@ Well, 5 is just an arbitrary number, but I picked it because it's nice round num
 
 In any case, this new rule invalidates the "turtling" strategy, because leaving the opponent unchecked for too long allows them to one-shot you. 
 
-However, there is also a second issue with the game. Well, not quite an issue, but a segue into what I'm going to talk about next. Notice how it's always best to play 🚰 as the first action? After all, we cannot play 🔫 or 🎈 in the first move, and 🛡 is useless when the opponent cannot attack us with 🔫 or 🎈 either. 
+However, there is also a second issue with the game. Well, not quite an issue per se, but a good segue into what I'm going to talk about next. Have you noticed how it's always best to play 🚰 as the first action? After all, we cannot play 🔫 or 🎈 in the first move, and 🛡 is useless when the opponent cannot attack us with 🔫 or 🎈 either. 
 
-Let's solidify this idea with \*gasp\* *mathematics*. But first, we must talk a bit about game theory. 
+Let's solidify this idea with \*gasp\* *mathematics*. But first, we need to introduce some game theory. 
 
 # Game Theory (or at least, what I'm going to cover in this post)
 
 *Key term:* **Nash Equilibrium**
 
-A Nash Equilibrium is essentially a "relative best strategy". Well, not quite, but this simple explanation will suffice. In a Nash Equilibrium strategy, no **one** player can improve their position by switching to a different move. 
+A Nash Equilibrium is essentially a "relative best strategy". Well, that's not 100% accurate, but this simple explanation will suffice. In a Nash Equilibrium strategy, no **one** player can improve their position by switching to a different move. 
 
-If it is possible for multiple players collude together and change their moves for a better result, it doesn't prevent a strategy from being a Nash Equilibrium. 
+The ability for one player to improve their outcome by changing their choice is called *positive deviation*, and a Nash Equilibrium occurs when there is no positive deviation for any player.
 
-We might talk about this more in the future, but we'll leave the explanation here for now. 
+Note that, if it is possible for multiple players collude together and collectively change their moves for a better result, it doesn't prevent a strategy from being a Nash Equilibrium: we only consider whether any one single player has positive deviation. 
+
+We might talk about Nash Equilibrium and game theory more in the future, but we'll leave the explanation here for now. 
 
 ## Applying Nash Equilibrium
 
@@ -90,15 +92,15 @@ Well, I claim that the Nash Equilibrium is when both prisoners betray. What? But
 
 The reason the Nash Equilibrium is at double betrayal is because, in this strategy, any one player choosing to stay silent instead will double their time in jail. 
 
-Meanwhile, both players staying silent is not an equilibrium, because any one player changing their choice to betrayal can get away without any sentence at all. 
+Meanwhile, both players staying silent is not an equilibrium, because any one player changing their choice to betrayal can get away without any sentence at all—they have positive deviation. 
 
-Finally, one important fact is that there is not necessarily exactly one Nash Equilibrium: there could be multiple, or there could be none. 
+Before we move on, I'd like to mention that there isn't always exactly one Nash Equilibrium: there could be multiple, or there could be none. 
 
 With this new knowledge in mind, let's return to our games.
 
 [^1]: Even better: can you devise a method to find the Nash Equilibria in any given outcome table?
 
-# Rock Paper Scissors
+## Rock Paper Scissors
 
 First, we can try finding a Nash Equilibrium for Rock Paper Scissors. To do so, we have to assign some sort of value to each possible outcome of the game, just like the prisoners' sentences in the previous example. 
 
@@ -114,13 +116,13 @@ Now we can draw another grid, just like before.
 
 Where is the Nash Equilibrium?
 
-Weell, it was a trick question, there is no Nash Equilibrium in Rock Paper Scissors! We can show this more rigorously by noticing that at it is impossible for both players to be winning, hence at least one of the players would be able to improve their result by changing their move to one that would win instead. Therefore, no outcome can be the Nash Equilibrium. 
+Well, it was kind of a trick question, there is no Nash Equilibrium in Rock Paper Scissors! Notice that at it is impossible for both players to be winning, hence at least one of the players would be able to improve their result by changing their move to one that would win instead—there is positive deviation. Therefore, no outcome can be the Nash Equilibrium. 
 
-This makes a lot of sense, since Rock Paper Scissors is meant to be a random game—there is no single "optimal" move to play. If there was a Nash equilibrium, all players would play that strategy every time, and the game would be quite boring.
+This makes a lot of sense, since Rock Paper Scissors is meant to be a random game—there is no single "optimal" move to play. If there was a Nash equilibrium, all players would play that strategy every time to maximize their score, and the game would be quite boring.
 
 But wait! We previously noticed that there does exist a optimal strategy for the first move in 007—could we then build a outcome table and find the Nash Equilibrium?
 
-# Back to 007
+## Back to 007
 
 Here's the outcome table for the first move of 007:
 
@@ -130,6 +132,25 @@ Here's the outcome table for the first move of 007:
 |**🔫/🎈**| instant loss \ +1 ammo |instant loss \ instant loss|instant loss \ nothing|
 |**🛡**| nothing \ +1 ammo| nothing \ instant loss | nothing \ nothing|
 
-Now looking at this table, we can see our suspicious confirmed. The 🚰 \🚰 strategy is a Nash Equilibrium, meaning that deviating from this strategy would only ever result in a worse outcome. 
+Now looking at this table, we can see our suspicious confirmed. The 🚰 \🚰 strategy is a Nash Equilibrium, meaning that deviating from this strategy would only ever result in a worse outcome—no positive deviation. 
 
-\[POST UNDER CONSTRUCTION\]
+Hence, it's always optimal to 🚰 in the first move. With that, we successfully used game theory to explain why the most optimal first move in 007 is 🚰!
+
+## Concluding Thoughts
+
+Having a Nash Equilibrium in the first round isn't that game-breaking for 007: to see this, we can analyze the outcome table for the second round, after both players play 🚰 (we leave 🎈 out of the outcome table because it cannot be used at this point). 
+
+| P1 choice \ P2 choice | 🚰 | 🔫 | 🛡 |
+|-|:-:|:-:|:-:|
+|**🚰**|+1 ammo \ +1 ammo| lose \ win | +1 ammo \ nothing|
+|**🔫**| win \ lose | -1 ammo \ -1 ammo | -1 ammo \ nothing|
+|**🛡**| nothing \ +1 ammo| nothing \ -1 ammo | nothing \ nothing|
+
+Can you convince yourself that there is no Nash Equilibrium? 
+
+Finally, this shows that Double-0 Seven doesn't have a perfect strategy past the first move, reverting to a Rock-Paper-Scissors-like game. Personally, I like to start the game with 1 ammo for both players, to skip the predetermined first move altogether. 
+
+And with that, it seems this post is now coming to a close. Having successfully run out of things to blabber about, I hope that you found this quick exploration of game theory fun, or somewhat intriguing at least. 
+
+---
+P.S. i added a comment feature. plz use it to honor my brain cells that sacrificed themselves in the process of c̶o̶p̶y̶-̶p̶a̶s̶t̶i̶n̶g̶ ̶o̶t̶h̶e̶r̶ ̶p̶e̶o̶p̶l̶e̶'̶s̶ ̶c̶o̶d̶e̶ coding this feature XD
