@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Analyzing 007 - Part 1
+title: Analyzing 007
 categories: [Game Theory]
 ---
 
