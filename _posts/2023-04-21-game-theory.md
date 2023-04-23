@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Analyzing 007
+title: Double-0 Seven
 categories: [Game Theory]
 ---
 
@@ -12,7 +12,7 @@ Woohoo, first actual post! I'm just going to write up some of my thoughts on a g
 
 007 is a game, named after the famous spy, that is essentially an upgraded, slightly more violent version of Rock Paper Scissors.
 
-## The rules
+## The Rules
 
 Like in Rock Paper Scissors, 007 involves two players simultaneously choosing one of three possible moves and resolving combat each round, with rounds being played continuously until one person wins. But unlike Rock Paper Scissors, 007 has more complex rules, and involves some counters that carry on from one round to the next.
 
