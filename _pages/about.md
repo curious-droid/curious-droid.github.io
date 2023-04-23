@@ -12,10 +12,6 @@ permalink: /about/
 <p style="text-align: center;">Proud creator of spaghetti since 2019
 </p>
 
-<p style="text-align: center;">
-Highly active on Discord: 𝙲𝚞𝚛𝚒𝚘𝚞𝚜_𝙳𝚛𝚘𝚒𝚍#4678
-</p>
-
 ---
 
 <p style="text-align: center;">Roses are red,</p>
@@ -29,3 +25,6 @@ Highly active on Discord: 𝙲𝚞𝚛𝚒𝚘𝚞𝚜_𝙳𝚛𝚘𝚒𝚍#4678
 ---
 
 Confused? Click [here](ttps://en.wikipedia.org/wiki/The_Game_(mind_game) "The Game") lol.
+
+
+Highly active on Discord: 𝙲𝚞𝚛𝚒𝚘𝚞𝚜_𝙳𝚛𝚘𝚒𝚍#4678
