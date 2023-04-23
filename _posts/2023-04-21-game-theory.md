@@ -51,7 +51,7 @@ The first is that the game has the potential to go on forever if one player simp
 
 4. 🎈: Bomb. Consumes 5 ammo (a player must have at least 5 ammo to play this move), instantly defeats the other player (unless they both play 🎈, if so the game continues).
 
-Well, 5 is just an arbitrary number, but I picked it because it's nice round number that's not too large.
+Well, 5 is just an arbitrary number, but I picked it because it's a nice round number that's not too large.
 
 In any case, this new rule invalidates the "turtling" strategy, because leaving the opponent unchecked for too long allows them to one-shot you. 
 
@@ -134,7 +134,7 @@ Here's the outcome table for the first move of 007:
 |**🔫/🎈**| instant loss \ +1 ammo |instant loss \ instant loss|instant loss \ nothing|
 |**🛡**| nothing \ +1 ammo| nothing \ instant loss | nothing \ nothing|
 
-Now looking at this table, we can see our suspicious confirmed. The 🚰 \🚰 strategy is a Nash Equilibrium, meaning that deviating from this strategy would only ever result in a worse outcome—no positive deviation. With that, we successfully used game theory to explain why the most optimal first move in 007 is 🚰!
+Now looking at this table, we can see our suspicions confirmed. The 🚰 \🚰 strategy is a Nash Equilibrium, meaning that deviating from this strategy would only ever result in a worse outcome—no positive deviation. With that, we successfully used game theory to explain why the most optimal first move in 007 is 🚰!
 
 ## Concluding Thoughts
 
