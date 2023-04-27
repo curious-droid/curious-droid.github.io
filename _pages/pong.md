@@ -4,7 +4,7 @@ title: PONG Game Console
 permalink: /pong/
 ---
 
-Pong Game Console (https://github.com/curious-droid/pong-game-console)
+Pong Game Console ([https://github.com/curious-droid/pong-game-console](https://github.com/curious-droid/pong-game-console))
 
 Read this page for a demo of the features of the PONG game console.
 
