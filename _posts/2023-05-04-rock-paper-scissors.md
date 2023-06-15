@@ -6,10 +6,12 @@ categories: [Game Theory]
 
 We've talked about Rock Paper Scissors before. But let's explore some extensions of the classic game.
     
+<!--
 <script>window.texme = { style: 'none' }</script>
 <script src="https://cdn.jsdelivr.net/npm/texme@1.2.2"></script>
 
 <textarea>
+-->
 
 # Rock Paper Scissors
 
@@ -58,4 +60,5 @@ Now we suppose that there does exist a valid rock-paper-scissors game for $n$ mo
 # Afterword
 
 Thanks for reading :P this article was pretty long, but I hope you found the exposition somewhat clear/intuitive. I thought of this interesting problem as I was taking my APCS test and couldn't resist writing it down in a post!
-</textarea>
+
+<!--</textarea>-->
