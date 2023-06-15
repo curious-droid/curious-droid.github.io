@@ -3,12 +3,13 @@ layout: post
 title: Rock Paper Scissors Lizard Spock...
 categories: [Game Theory]
 ---
+
+We've talked about Rock Paper Scissors before. But let's explore some extensions of the classic game.
     
 <script>window.texme = { style: 'none' }</script>
 <script src="https://cdn.jsdelivr.net/npm/texme@1.2.2"></script>
 
 <textarea>
-We've talked about Rock Paper Scissors before. But let's explore some extensions of the classic game.
 
 # Rock Paper Scissors
 
