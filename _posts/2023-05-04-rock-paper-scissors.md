@@ -4,6 +4,9 @@ title: Rock Paper Scissors Lizard Spock...
 categories: [Game Theory]
 ---
 
+    
+<script src="https://cdn.jsdelivr.net/npm/texme@0.7.0"></script>
+
 We've talked about Rock Paper Scissors before. But let's explore some extensions of the classic game.
 
 # Rock Paper Scissors
