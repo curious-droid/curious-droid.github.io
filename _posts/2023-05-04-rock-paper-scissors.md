@@ -4,11 +4,11 @@ title: Rock Paper Scissors Lizard Spock...
 categories: [Game Theory]
 ---
 
-We've talked about Rock Paper Scissors before. But let's explore some extensions of the classic game...
+We've talked about Rock Paper Scissors before. But let's explore some extensions of the classic game.
 
 # Rock Paper Scissors
 
-![](\rps.png)
+![](/images/rps.png)
 
 The normal game of Rock Paper Scissors involves players simultaneously choosing and revealing a move. The three choices are "Rock", "Paper", and "Scissors", with victors determined as in the image above. I'll call such an image a 'victory graph', where arrows point from the move that wins to the move that loses. 
 
@@ -28,7 +28,7 @@ This logically leads us to ask: then, for which numbers of moves can we make the
 
 And here is the corresponding victory graph:
 
-![](\rpsls.jpeg)
+![](/images/rpsls.jpeg)
 
 # Now on to the math...
 
@@ -48,7 +48,7 @@ Okay, so for the small case we can show that when $n=3$, we can make a valid roc
 
 Now we suppose that there does exist a valid rock-paper-scissors game for $n$ moves. Can we show that it is possible to add two more moves to make another valid game? Indeed, let's call these two moves $A$ and $B$, and we can assume that $A$ beats $B$. Then we can make $A$ win against exactly $\frac{n-1}{2}$ of the remaining $n$ moves, while $B$ wins against the other $\frac{n+1}{2}$. The game is still random, because each move still wins against an equal number of other moves. So there we have it! We can be sure that completely random rock-paper-scissors games exist for all odd $n$!
 
-![](\urps.png)
+![](/images/urps.png)
 
 # Afterword
 
