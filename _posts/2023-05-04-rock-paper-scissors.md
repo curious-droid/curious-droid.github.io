@@ -39,21 +39,21 @@ And here is the corresponding victory graph:
 
 # Now on to the math...
 
-Okay then. Let's try to characterize which numbers of moves work. Consider having $n$ moves arranged in our victory graph as **vertices**. In the victory graph, every **edge** connecting two vertices is drawn in, and each edge has a **direction**, pointing from the winner to the loser. Furthermore, in a 'random' victory graph, each vertex must have the same number of outward edges, and the same number of inward edges. 
+Okay then. Let's try to characterize which numbers of moves work. Consider having n moves arranged in our victory graph as **vertices**. In the victory graph, every **edge** connecting two vertices is drawn in, and each edge has a **direction**, pointing from the winner to the loser. Furthermore, in a 'random' victory graph, each vertex must have the same number of outward edges, and the same number of inward edges. 
 
-We've seen that $n=3, n=5$ work, while $n=4$ does not. If we think about it logically, it seems that only odd numbers work. Can we show this rigorously?
+We've seen that n=3, n=5 work, while n=4 does not. If we think about it logically, it seems that only odd numbers work. Can we show this rigorously?
 
 First, let's show that each vertex must have an equal number of ingoing and outgoing edges. To do this, suppose that each vertex has the same, non-equal numbers of ingoing and outgoing edges. But since each edge is counted once as an outward edge and once as an inward edge, these counts must be the same, which fails in this case. Hence, each vertex must have an equal number of ingoing and outgoing edges.
 
-Next, consider when $n$ is even. It's quite clear that this won't work, since we need an equal number of ingoing and outgoing edges, meaning that each vertex has an even number of edges attached to it, which isn't true when $n$ is even (since each vertex has $n-1$ edges attached to it).
+Next, consider when n is even. It's quite clear that this won't work, since we need an equal number of ingoing and outgoing edges, meaning that each vertex has an even number of edges attached to it, which isn't true when n is even (since each vertex has n-1 edges attached to it).
 
-Finally, we move on to the case where $n$ is odd. It seems that this will work, since we can have an equal number of ingoing and outgoing edges for each vertex. But we don't really know that this will work for sure—at least until we prove it. 
+Finally, we move on to the case where n is odd. It seems that this will work, since we can have an equal number of ingoing and outgoing edges for each vertex. But we don't really know that this will work for sure—at least until we prove it. 
 
 We can use math induction to prove the desired result: the "falling dominoes" type of proof where we show that small cases imply larger cases, then prove the simple small cases to solve the entire problem in one fell swoop.
 
-Okay, so for the small case we can show that when $n=3$, we can make a valid rock-paper-scissors game. This is true, because its simply normal rock paper scissors. 
+Okay, so for the small case we can show that when n=3, we can make a valid rock-paper-scissors game. This is true, because its simply normal rock paper scissors. 
 
-Now we suppose that there does exist a valid rock-paper-scissors game for $n$ moves. Can we show that it is possible to add two more moves to make another valid game? Indeed, let's call these two moves $A$ and $B$, and we can assume that $A$ beats $B$. Then we can make $A$ win against exactly $\frac{n-1}{2}$ of the remaining $n$ moves, while $B$ wins against the other $\frac{n+1}{2}$. The game is still random, because each move still wins against an equal number of other moves. So there we have it! We can be sure that completely random rock-paper-scissors games exist for all odd $n$!
+Now we suppose that there does exist a valid rock-paper-scissors game for n moves. Can we show that it is possible to add two more moves to make another valid game? Indeed, let's call these two moves A and B, and we can assume that A beats B. Then we can make A win against exactly (n-1)/2 of the remaining n moves, while B wins against the other (n+1)/2. The game is still random, because each move still wins against an equal number of other moves. So there we have it! We can be sure that completely random rock-paper-scissors games exist for all odd n!
 
 ![](/images/urps.png)
 
